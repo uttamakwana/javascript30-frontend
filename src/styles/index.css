@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter Tight", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  min-height: 100svh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root,
+.app {
+  min-height: 100svh;
+}
+
+.app-wrapper {
+  /* width: min(100% - 2rem, 1400px); */
+  width: min(100%, 1400px);
+  margin-inline: auto;
+}
+
+.my-container {
+  width: min(100% - 2rem, 1400px);
+  margin-inline: auto;
+}

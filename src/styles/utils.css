@@ -1,0 +1,397 @@
+/* flex */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-flex-start {
+  align-items: flex-start;
+}
+
+.ai-flex-end {
+  align-items: flex-end;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.jc-space-around {
+  justify-content: space-around;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-4 {
+  gap: 4px;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* Positioning */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.pos-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+}
+
+/* padding and Paddings */
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-8 {
+  margin: 8px;
+}
+
+.mb-1 {
+  margin-block: 1rem;
+}
+
+.mb-2 {
+  margin-block: 2rem;
+}
+
+.mb-8 {
+  margin-block: 8px;
+}
+
+.mi-1 {
+  margin-inline: 1rem;
+}
+
+.mi-2 {
+  margin-inline: 2rem;
+}
+
+.mi-8 {
+  margin-inline: 8px;
+}
+
+.margin-inline-auto {
+  margin-inline: auto;
+}
+
+.ml-4 {
+  margin-left: 4px;
+}
+
+.mr-4 {
+  margin-right: 4px;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-4 {
+  margin-top: 4px;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.pb-1 {
+  padding-block: 1rem;
+}
+
+.pb-2 {
+  padding-block: 2rem;
+}
+
+.pb-8 {
+  padding-block: 8px;
+}
+
+.pi-1 {
+  padding-inline: 1rem;
+}
+
+.pi-2 {
+  padding-inline: 2rem;
+}
+
+.pi-8 {
+  padding-inline: 8px;
+}
+
+/* Border and Outline */
+.border-none {
+  border: none;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.br-5 {
+  border-radius: 5px;
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.br-1 {
+  border-radius: 1rem;
+}
+
+.br-2 {
+  border-radius: 2rem;
+}
+
+.br-50 {
+  border-radius: 50%;
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+.grid-responsive-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* height and width */
+
+.h-100 {
+  height: 100svh;
+}
+
+.min-h-100 {
+  min-height: 100svh;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.min-w-100 {
+  min-width: 100%;
+}
+
+.max-w-350 {
+  max-width: 350px;
+}
+
+.max-w-1350px {
+  max-width: 1350px;
+}
+
+.max-w-1920 {
+  max-width: 1920px;
+}
+
+.max-w-100 {
+  max-width: 100%;
+}
+
+/* display */
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.hidden {
+  display: hidden;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* font weight */
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold,
+.strong {
+  font-weight: 600;
+}
+
+.extrabold {
+  font-weight: 700;
+}
+
+.heading-font {
+  font-family: var(--headingFontFamily), sans-serif;
+}
+
+.text-font {
+  font-family: var(--bodyFontFamily), sans-serif;
+}
+
+.z-low {
+  z-index: var(--zIndexLow);
+}
+
+.z-medium {
+  z-index: var(--zIndexMedium);
+}
+
+.z-high {
+  z-index: var(--zIndexHigh);
+}
+
+.clr-text {
+  color: var(--text);
+}
+
+.clr-background {
+  color: var(--background);
+}
+
+.clr-primary {
+  color: var(--primary);
+}
+
+.bg-clr-text {
+  background-color: var(--text);
+}
+
+.bg-clr-background {
+  background-color: var(--background);
+}
+
+.bg-clr-primary {
+  background-color: var(--primary);
+}

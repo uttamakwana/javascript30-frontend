@@ -1,0 +1,52 @@
+.hero-section {
+  position: fixed;
+  inset: 0;
+  margin: 0 auto;
+  width: min(100% - 2rem, 1400px);
+  z-index: 10;
+}
+
+.hero-heading {
+  font-size: clamp(40px, 8vmin, 80px);
+  background: linear-gradient(to top, var(--background-50), var(--primary-50));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+  font-size: clamp(18px, 3vmin, 48px);
+  background: linear-gradient(to right, var(--text-50), var(--text));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-button {
+  padding: 1rem 1.25rem;
+  border: none;
+  /* max-width: 300px; */
+  margin-inline: auto;
+  border-radius: 10px;
+  font-size: clamp(18px, 2vmin, 40px);
+  background: linear-gradient(to top, var(--primary-50), var(--primary));
+  /* color: var(--text); */
+  /* animation: bounce 400ms ease infinite alternate; */
+}
+
+.hero-button a {
+  background: linear-gradient(
+    to bottom,
+    var(--background-50),
+    var(--background)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1px);
+  }
+}

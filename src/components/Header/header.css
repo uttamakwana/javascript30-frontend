@@ -1,0 +1,30 @@
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-inline: auto;
+  width: min(100% - 2rem, 1400px);
+  background-color: var(--background);
+  box-shadow: 0 0 0 1000vmax var(--background);
+  clip-path: inset(0 -1000vmax);
+}
+
+.main-header-list {
+  list-style: none;
+  gap: clamp(8px, 1rem, 3rem);
+}
+
+.main-header-list-item-link {
+  display: grid;
+  place-items: center;
+  color: var(--text);
+  font-size: clamp(25px, 5vmin, 40px);
+}
+
+.main-header-logo {
+  /* font-size: 5vmin; */
+  font-size: clamp(25px, 5vmin, 40px);
+  background: linear-gradient(to bottom, var(--text-50), var(--text));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
