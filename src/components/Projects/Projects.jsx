@@ -16,6 +16,7 @@ const Projects = () => {
 
   // calculating the header height to adjust the project-header top position
   useEffect(() => {
+    document.title = "JavaScript30 | Projects";
     setTimeout(() => {
       setLoading(false);
     }, 1000);
@@ -53,7 +54,7 @@ const Projects = () => {
         setProjects(filteredProjects);
       }
     } else {
-      const copyProjects = projects;
+      const copyProjects = projectsData;
       const filteredProjects = copyProjects.filter(
         (project) =>
           project.name.toLowerCase().includes(e.target.value.toLowerCase()) ||
@@ -89,28 +90,37 @@ const Projects = () => {
           >
             <button
               className={btn === "all" ? "active" : ""}
-              onClick={() => setBtn("all")}
+              onClick={() => {
+                setBtn("all");
+                setProjects(projectsData);
+              }}
             >
               All
             </button>
-            <button
-              className={btn === "basic" ? "active" : ""}
-              onClick={() => setBtn("basic")}
-            >
-              Basic
-            </button>
-            <button
-              className={btn === "intermediate" ? "active" : ""}
-              onClick={() => setBtn("intermediate")}
-            >
-              Intermediate
-            </button>
-            <button
-              className={btn === "advanced" ? "active" : ""}
-              onClick={() => setBtn("advanced")}
-            >
-              Advanced
-            </button>
+            {projects.length > 0 && (
+              <button
+                className={btn === "basic" ? "active" : ""}
+                onClick={() => setBtn("basic")}
+              >
+                Basic
+              </button>
+            )}
+            {projects.length > 0 && (
+              <button
+                className={btn === "intermediate" ? "active" : ""}
+                onClick={() => setBtn("intermediate")}
+              >
+                Intermediate
+              </button>
+            )}
+            {projects.length > 0 && (
+              <button
+                className={btn === "advanced" ? "active" : ""}
+                onClick={() => setBtn("advanced")}
+              >
+                Advanced
+              </button>
+            )}
             <CloseIcon
               className="filter-close-icon"
               onClick={() => setFilter(false)}
@@ -119,7 +129,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="projects-grid grid">
-        {projects &&
+        {projects.length > 0 ? (
           projects.map((project) => {
             if (loading) {
               return <SkeletonCard key={project._id} />;
@@ -132,7 +142,10 @@ const Projects = () => {
                 />
               );
             }
-          })}
+          })
+        ) : (
+          <p className="project-not-found">No projects found!</p>
+        )}
       </div>
     </section>
   );
