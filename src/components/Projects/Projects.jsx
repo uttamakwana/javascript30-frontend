@@ -128,9 +128,16 @@ const Projects = () => {
       </motion.div>
       <motion.div
         className="projects-grid grid"
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.5 }}
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0, y: 100 },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.5, duration: 0.5 },
+          },
+        }}
       >
         {projects &&
           projects.map((project) => {
