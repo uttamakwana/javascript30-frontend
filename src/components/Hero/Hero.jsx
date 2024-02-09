@@ -1,17 +1,10 @@
 import { Link } from "react-router-dom";
 // css
 import "./hero.css";
-// motion
-import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <motion.section
-      className="hero-section flex-center"
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
-      transition={{ delay: 0.4, duration: 0.5 }}
-    >
+    <section className="hero-section flex-center">
       <div className="hero-conatiner text-center  flex-col gap-1">
         <h1 className="hero-heading font-extrabold">
           Welcome to the JavaScript30
@@ -25,7 +18,7 @@ const Hero = () => {
         </button>
       </div>
       <div className="hero-gradient"></div>
-    </motion.section>
+    </section>
   );
 };
 

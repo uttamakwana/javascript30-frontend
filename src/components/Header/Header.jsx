@@ -7,17 +7,10 @@ import {
 } from "../../constants/icons.js";
 // css
 import "./header.css";
-// motion
-import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <motion.header
-      className="main-header flex-between pb-1"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <header className="main-header flex-between pb-1">
       <h1 className="main-header-logo clr-text font-bold fs-2">
         <Link to="/">JavaScript30</Link>
       </h1>
@@ -53,7 +46,7 @@ const Header = () => {
           </a>
         </li>
       </ul>
-    </motion.header>
+    </header>
   );
 };
 

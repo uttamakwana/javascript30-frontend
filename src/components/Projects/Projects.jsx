@@ -3,8 +3,6 @@ import "./projects.css";
 // containers
 import { ProjectCard, SkeletonCard } from "../../containers";
 import { useEffect, useState } from "react";
-// framer motion
-import { motion } from "framer-motion";
 // projects data
 import { projectsData } from "../../data/projects";
 import { FilterIcon, CloseIcon } from "../../constants/icons";
@@ -65,14 +63,8 @@ const Projects = () => {
     }
   };
   return (
-    <motion.section className="projects-section">
-      <motion.div
-        className="projects-header"
-        style={{ top: `${headerHeight - 1}px` }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.5 }}
-      >
+    <section className="projects-section">
+      <div className="projects-header" style={{ top: `${headerHeight - 1}px` }}>
         <div className="projects-header-inside">
           <h1 className="projects-heading font-semibold flex-between">
             <span>Projects</span>
@@ -125,20 +117,8 @@ const Projects = () => {
             />
           </div>
         </div>
-      </motion.div>
-      <motion.div
-        className="projects-grid grid"
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: { opacity: 0, y: 100 },
-          visible: {
-            opacity: 1,
-            y: 0,
-            transition: { delay: 0.5, duration: 0.5 },
-          },
-        }}
-      >
+      </div>
+      <div className="projects-grid grid">
         {projects &&
           projects.map((project) => {
             if (loading) {
@@ -153,8 +133,8 @@ const Projects = () => {
               );
             }
           })}
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 };
 

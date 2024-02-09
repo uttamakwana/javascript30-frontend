@@ -2,8 +2,18 @@
   position: fixed;
   inset: 0;
   margin: 0 auto;
-  width: min(100% - 2rem, 1400px);
   z-index: 10;
+  width: min(100% - 2rem, 1400px);
+  animation: hero 400ms linear;
+}
+
+@keyframes hero {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
 
 .hero-heading {
