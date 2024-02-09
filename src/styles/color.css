@@ -1,21 +1,28 @@
 @media (prefers-color-scheme: light) {
   :root {
     --text: hsl(60, 12%, 5%);
+    --text-50: hsl(0, 0%, 12%);
     --background: hsl(60, 10%, 94%);
-    --primary: hsl(53, 84%, 62%);
+    --background-50: hsl(60, 9%, 83%);
+    --primary: hsl(53, 100%, 45%);
+    --primary-50: hsl(53, 84%, 50%);
     --secondary: hsl(133, 11%, 68%);
     --accent: hsl(155, 10%, 43%);
+    --skeleton-bg: hsl(60, 9%, 83%);
+    --skeleton-content: hsl(60, 9%, 75%);
   }
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --text: hsl(60, 12%, 95%);
-    --text-50: hsl(60, 12%, 50%);
+    --text-50: hsl(0, 0%, 74%);
     --background: hsl(60, 10%, 6%);
-    --background-50: hsl(60, 10%, 20%);
+    --background-50: hsl(0, 0%, 16%);
     --primary: hsl(53, 84%, 38%);
     --primary-50: hsl(53, 84%, 50%);
     --secondary: hsl(133, 11%, 32%);
     --accent: hsl(155, 10%, 57%);
+    --skeleton-bg: #1e1e1e;
+    --skeleton-content: #2b2b2b;
   }
 }

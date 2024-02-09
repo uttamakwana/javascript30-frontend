@@ -1,0 +1,37 @@
+.project-card-skeleton {
+  height: 223px;
+  border-radius: 5px;
+  background: var(--skeleton-bg);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.project-card-skeleton-name,
+.project-card-skeleton-tech {
+  width: 80%;
+  height: 18px;
+  background: var(--skeleton-content);
+  border-radius: 5px;
+}
+
+.project-card-skeleton-tech {
+  width: 100%;
+}
+
+.project-card-skeleton-buttons {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+}
+
+.project-card-skeleton-buttons a {
+  height: 32px;
+  width: 50%;
+  flex: 1;
+  border-radius: 5px;
+  background: var(--skeleton-content);
+}

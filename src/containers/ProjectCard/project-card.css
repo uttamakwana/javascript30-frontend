@@ -1,20 +1,60 @@
 .project-card {
-  /* background-color: var(--primary); */
   border-radius: 5px;
-  box-shadow: 0 0 10px var(--background-50);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  transition: all ease-in 100ms;
+  user-select: none;
+  max-width: 400px;
 }
 
-.project-card img {
-  position: absolute;
-  width: 100%;
+.project-card.opaque {
+  opacity: 0.5;
+  transform: scale(0.995);
+}
+
+.project-card:hover {
+  opacity: 1;
+  transform: scale(1.025);
 }
 
 .project-card-content {
-  position: absolute;
-  bottom: 0;
-  background-color: black;
-  width: 100%;
+  background-color: var(--background-50);
   padding: 0.5rem 0.75rem;
+}
+
+.project-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: var(--primary-50);
+  color: var(--background);
+  font-weight: 700;
+  border-bottom-right-radius: 5px;
+}
+
+.project-card-buttons {
+  background-color: var(--background-50);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.project-card-buttons a {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--primary-50);
+  font-weight: 500;
+  color: #000;
+  border-radius: 5px;
+  font-size: clamp(16px, 2vw, 18px);
+}
+
+.project-card-buttons a svg {
+  margin-left: 4px;
+}
+
+.project-card-buttons a:first-child {
+  /* border-right: 1px solid #000; */
 }
