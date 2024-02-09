@@ -29,7 +29,7 @@
   left: 0;
   padding: 10px;
   background-color: var(--primary-50);
-  color: var(--background);
+  color: #000;
   font-weight: 700;
   border-bottom-right-radius: 5px;
 }
